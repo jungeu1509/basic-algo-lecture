@@ -1,4 +1,4 @@
-// http://boj.kr/6d55942775494c419c9c6ee2099cc936
+// http://boj.kr/eaaedd3a5eec4b65b3e13a7342e46101
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -60,7 +60,7 @@ int main(void) {
       if (nxt[cursor] != -1) cursor = nxt[cursor];
     }
     else { // 'B'
-      if (cursor != 0) {
+      if (pre[cursor] != -1) {
         erase(cursor);
         cursor = pre[cursor];
       }
